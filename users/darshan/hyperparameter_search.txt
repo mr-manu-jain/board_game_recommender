@@ -1,0 +1,77 @@
+Starting validation search...
+
+================================================================================
+Testing config: emb_dim=32, n_layers=2, lr=0.001
+================================================================================
+emb_dim=32, layers=2, lr=1e-03 | Epoch 01 | TrainLoss=1.9170 | Val RMSE=1.3024 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 02 | TrainLoss=1.6343 | Val RMSE=1.2524 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 03 | TrainLoss=1.5492 | Val RMSE=1.2317 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 04 | TrainLoss=1.5100 | Val RMSE=1.2210 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 05 | TrainLoss=1.4884 | Val RMSE=1.2147 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 06 | TrainLoss=1.4756 | Val RMSE=1.2111 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 07 | TrainLoss=1.4680 | Val RMSE=1.2088 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 08 | TrainLoss=1.4634 | Val RMSE=1.2074 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 09 | TrainLoss=1.4605 | Val RMSE=1.2065 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 10 | TrainLoss=1.4587 | Val RMSE=1.2060 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 11 | TrainLoss=1.4574 | Val RMSE=1.2056 | 170s
+emb_dim=32, layers=2, lr=1e-03 | Epoch 12 | TrainLoss=1.4565 | Val RMSE=1.2054 | 169s
+
+================================================================================
+Testing config: emb_dim=32, n_layers=2, lr=0.003
+================================================================================
+emb_dim=32, layers=2, lr=3e-03 | Epoch 01 | TrainLoss=1.7131 | Val RMSE=1.2334 | 169s
+emb_dim=32, layers=2, lr=3e-03 | Epoch 02 | TrainLoss=1.5004 | Val RMSE=1.2117 | 169s
+emb_dim=32, layers=2, lr=3e-03 | Epoch 03 | TrainLoss=1.4715 | Val RMSE=1.2070 | 169s
+emb_dim=32, layers=2, lr=3e-03 | Epoch 04 | TrainLoss=1.4646 | Val RMSE=1.2057 | 169s
+emb_dim=32, layers=2, lr=3e-03 | Epoch 05 | TrainLoss=1.4626 | Val RMSE=1.2054 | 169s
+emb_dim=32, layers=2, lr=3e-03 | Epoch 06 | TrainLoss=1.4620 | Val RMSE=1.2052 | 169s
+emb_dim=32, layers=2, lr=3e-03 | Epoch 07 | TrainLoss=1.4617 | Val RMSE=1.2051 | 169s
+emb_dim=32, layers=2, lr=3e-03 | Epoch 08 | TrainLoss=1.4616 | Val RMSE=1.2051 | 169s
+emb_dim=32, layers=2, lr=3e-03 | Epoch 09 | TrainLoss=1.4616 | Val RMSE=1.2051 | 169s
+emb_dim=32, layers=2, lr=3e-03 | Epoch 10 | TrainLoss=1.4615 | Val RMSE=1.2052 | 169s
+
+================================================================================
+Testing config: emb_dim=64, n_layers=2, lr=0.001
+================================================================================
+emb_dim=64, layers=2, lr=1e-03 | Epoch 01 | TrainLoss=1.9095 | Val RMSE=1.3015 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 02 | TrainLoss=1.6342 | Val RMSE=1.2529 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 03 | TrainLoss=1.5503 | Val RMSE=1.2320 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 04 | TrainLoss=1.5106 | Val RMSE=1.2210 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 05 | TrainLoss=1.4884 | Val RMSE=1.2147 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 06 | TrainLoss=1.4755 | Val RMSE=1.2110 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 07 | TrainLoss=1.4680 | Val RMSE=1.2088 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 08 | TrainLoss=1.4634 | Val RMSE=1.2074 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 09 | TrainLoss=1.4605 | Val RMSE=1.2066 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 10 | TrainLoss=1.4587 | Val RMSE=1.2060 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 11 | TrainLoss=1.4574 | Val RMSE=1.2057 | 235s
+emb_dim=64, layers=2, lr=1e-03 | Epoch 12 | TrainLoss=1.4566 | Val RMSE=1.2054 | 235s
+
+================================================================================
+Testing config: emb_dim=64, n_layers=2, lr=0.003
+================================================================================
+emb_dim=64, layers=2, lr=3e-03 | Epoch 01 | TrainLoss=1.7119 | Val RMSE=1.2339 | 235s
+emb_dim=64, layers=2, lr=3e-03 | Epoch 02 | TrainLoss=1.5004 | Val RMSE=1.2119 | 235s
+emb_dim=64, layers=2, lr=3e-03 | Epoch 03 | TrainLoss=1.4715 | Val RMSE=1.2071 | 235s
+emb_dim=64, layers=2, lr=3e-03 | Epoch 04 | TrainLoss=1.4646 | Val RMSE=1.2056 | 235s
+emb_dim=64, layers=2, lr=3e-03 | Epoch 05 | TrainLoss=1.4627 | Val RMSE=1.2053 | 235s
+emb_dim=64, layers=2, lr=3e-03 | Epoch 06 | TrainLoss=1.4619 | Val RMSE=1.2054 | 235s
+emb_dim=64, layers=2, lr=3e-03 | Epoch 07 | TrainLoss=1.4617 | Val RMSE=1.2051 | 235s
+emb_dim=64, layers=2, lr=3e-03 | Epoch 08 | TrainLoss=1.4616 | Val RMSE=1.2050 | 235s
+emb_dim=64, layers=2, lr=3e-03 | Epoch 09 | TrainLoss=1.4615 | Val RMSE=1.2050 | 235s
+emb_dim=64, layers=2, lr=3e-03 | Epoch 10 | TrainLoss=1.4616 | Val RMSE=1.2054 | 235s
+
+Validation search complete.
+shape: (4, 5)
+┌─────────┬──────────┬───────┬──────────────┬───────────────┐
+│ emb_dim ┆ n_layers ┆ lr    ┆ weight_decay ┆ best_val_rmse │
+│ ---     ┆ ---      ┆ ---   ┆ ---          ┆ ---           │
+│ i64     ┆ i64      ┆ f64   ┆ f64          ┆ f64           │
+╞═════════╪══════════╪═══════╪══════════════╪═══════════════╡
+│ 64      ┆ 2        ┆ 0.003 ┆ 0.00001      ┆ 1.204971      │
+│ 32      ┆ 2        ┆ 0.003 ┆ 0.00001      ┆ 1.205055      │
+│ 64      ┆ 2        ┆ 0.001 ┆ 0.00001      ┆ 1.205369      │
+│ 32      ┆ 2        ┆ 0.001 ┆ 0.00001      ┆ 1.205429      │
+└─────────┴──────────┴───────┴──────────────┴───────────────┘
+
+Best config: {'emb_dim': 64, 'n_layers': 2, 'lr': 0.003, 'weight_decay': 1e-05}
+Best validation RMSE: 1.2050
