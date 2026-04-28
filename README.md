@@ -13,8 +13,8 @@ The repository contains exploratory analysis plus multiple model experiments, in
 ## Repository Structure
 
 - `eda.ipynb`: Main exploratory data analysis notebook.
-- `baseline-popularitybased-manu.ipynb`: Popularity-based baseline recommender.
-- `baseline-svd-manu.ipynb`: SVD-based collaborative filtering baseline.
+- `baseline-popularity_based.ipynb`: Popularity-based baseline recommender.
+- `baseline-svd.ipynb`: SVD-based collaborative filtering baseline.
 - `users/manu/v1/`: This is the final Submission folder & The primary implementation of the Two-Tower Hybrid Model using pure semantic descriptions
 - `users/manu/v1/[v1]_llm-embedding.ipynb`: Synthesis of rich-text profiles and 768-dim vector generation.
 - `users/manu/v1/[v1]_nnw.ipynb`: Primary neural network training and final evaluation on the test set.
