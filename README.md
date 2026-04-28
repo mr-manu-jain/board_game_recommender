@@ -24,8 +24,9 @@ The repository contains exploratory analysis plus multiple model experiments, in
 - `users/manu/_drafts/`: Development history and initial data checks.
 - `users/rahul/EDA_Rahul.ipynb`: EDA variant by Rahul.
 - `users/rahul/Hybrid_recommender_Rahul.ipynb`: Hybrid recommender experiment.
-- `users/darshan/darshan_lightgcn.ipynb`: LightGCN experiment.
-- `users/darshan/dummy/darshan_lightgcn_v2.ipynb`: Secondary LightGCN iteration.
+- `users/darshan/lightgcn_recommender.ipynb`: Secondary LightGCN iteration.
+- `users/darshan/v1/darshan_lightgcn.ipynb`: Initial lightGCN iteration
+- `users/darshan/hyperparameter_search.txt`: Hyperparameter testing
 
 This repository is notebook-driven and does not currently include a packaged Python module or CLI entrypoint.
 
