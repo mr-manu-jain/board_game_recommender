@@ -37,6 +37,14 @@ The notebooks reference a BGG-derived dataset with:
 - Raw user interactions (`raw_data/user_ratings.csv`) with tens of millions of rating records.
 - Processed parquet/csv artifacts for training and evaluation splits in some workflows.
 
+## Dataset Access
+
+Primary dataset source:
+
+- [Board Games Database from BoardGameGeek (Kaggle)](https://www.kaggle.com/datasets/threnjen/board-games-database-from-boardgamegeek)
+
+After downloading, organize files to match the paths used by notebooks (for example, `raw_data/games.csv` and `raw_data/user_ratings.csv` under your project data root).
+
 Most notebooks currently expect files mounted from a shared Google Drive path:
 
 `/content/drive/Shareddrives/CMPE256_FinalProject/board_game_recommendation`
