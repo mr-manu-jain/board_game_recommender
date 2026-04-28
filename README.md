@@ -13,10 +13,15 @@ The repository contains exploratory analysis plus multiple model experiments, in
 ## Repository Structure
 
 - `eda.ipynb`: Main exploratory data analysis notebook.
-- `users/manu/eda-manujain.ipynb`: Additional EDA and data checks.
-- `users/manu/baseline-popularitybased-manu.ipynb`: Popularity-based baseline recommender.
-- `users/manu/baseline-svd-manu.ipynb`: SVD-based collaborative filtering baseline.
-- `users/manu/llm-embedding.ipynb`: LLM-embedding + hybrid model workflow.
+- `baseline-popularitybased-manu.ipynb`: Popularity-based baseline recommender.
+- `baseline-svd-manu.ipynb`: SVD-based collaborative filtering baseline.
+- `users/manu/v1/`: This is the final Submission folder & The primary implementation of the Two-Tower Hybrid Model using pure semantic descriptions
+- `users/manu/v1/[v1]_llm-embedding.ipynb`: Synthesis of rich-text profiles and 768-dim vector generation.
+- `users/manu/v1/[v1]_nnw.ipynb`: Primary neural network training and final evaluation on the test set.
+- `users/manu/v2/`: This is the exploratory folder which includes the code for implementing feature sensitivity analysis incorporated using structured metadata (Designer, Year, Complexity).
+- `users/manu/v2/[v2]_llm-embedding.ipynb`: Enriched text profile generation.
+- `users/manu/v2/[v2]_nnw.ipynb`: Model training for metadata-augmented embeddings.
+- `users/manu/_drafts/`: Development history and initial data checks.
 - `users/rahul/EDA_Rahul.ipynb`: EDA variant by Rahul.
 - `users/rahul/Hybrid_recommender_Rahul.ipynb`: Hybrid recommender experiment.
 - `users/darshan/darshan_lightgcn.ipynb`: LightGCN experiment.
