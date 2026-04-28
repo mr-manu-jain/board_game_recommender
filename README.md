@@ -13,64 +13,75 @@ The repository contains exploratory analysis plus multiple model experiments, in
 ## Repository Structure
 
 - `eda.ipynb`: Main exploratory data analysis notebook.
-- `baseline-popularity_based.ipynb`: Popularity-based baseline recommender.
-- `baseline-svd.ipynb`: SVD-based collaborative filtering baseline.
-- `users/manu/v1/`: This is the final Submission folder & The primary implementation of the Two-Tower Hybrid Model using pure semantic descriptions
+- `baseline_popularity_based.ipynb`: Popularity-based baseline recommender.
+- `baseline_svd.ipynb`: SVD-based collaborative filtering baseline.
+- `users/manu/v1/`: Final submission folder with the primary Two-Tower hybrid modeling workflow.
 - `users/manu/v1/[v1]_llm-embedding.ipynb`: Synthesis of rich-text profiles and 768-dim vector generation.
 - `users/manu/v1/[v1]_nnw.ipynb`: Primary neural network training and final evaluation on the test set.
-- `users/manu/v2/`: This is the exploratory folder which includes the code for implementing feature sensitivity analysis incorporated using structured metadata (Designer, Year, Complexity).
+- `users/manu/v2/`: Exploratory folder for feature-sensitivity analysis using structured metadata (designer, year, complexity).
 - `users/manu/v2/[v2]_llm-embedding.ipynb`: Enriched text profile generation.
 - `users/manu/v2/[v2]_nnw.ipynb`: Model training for metadata-augmented embeddings.
 - `users/manu/_drafts/`: Development history and initial data checks.
 - `users/rahul/EDA_Rahul.ipynb`: EDA variant by Rahul.
 - `users/rahul/Hybrid_recommender_Rahul.ipynb`: Hybrid recommender experiment.
 - `users/darshan/darshan_lightgcn.ipynb`: LightGCN experiment.
-- `users/manu/nnw`: Neural recommender workflow (JSON notebook export format).
+- `users/darshan/dummy/darshan_lightgcn_v2.ipynb`: Secondary LightGCN iteration.
+
+This repository is notebook-driven and does not currently include a packaged Python module or CLI entrypoint.
 
 ## Data Overview
 
 The notebooks reference a BGG-derived dataset with:
 
-- Game metadata (`games.csv`) and structured feature tables (`themes`, `mechanics`, `designers`, `artists`, `publishers`, etc.).
-- User interactions (`user_ratings.csv`) with tens of millions of rating records.
+- Raw game metadata (`raw_data/games.csv`) and related feature tables (`themes`, `mechanics`, `designers`, `artists`, `publishers`, etc.).
+- Raw user interactions (`raw_data/user_ratings.csv`) with tens of millions of rating records.
 - Processed parquet/csv artifacts for training and evaluation splits in some workflows.
 
 Most notebooks currently expect files mounted from a shared Google Drive path:
 
 `/content/drive/Shareddrives/CMPE256_FinalProject/board_game_recommendation`
 
-If you run locally, update the path variables in each notebook to point to your data location.
+Dataset files are not included in this repository. If you run locally, update the path variables in each notebook to point to your data location.
 
 ## Environment Setup
 
 Recommended: Python 3.10+ and Jupyter/Colab.
 
 1. Create and activate a virtual environment.
-2. Install core dependencies:
+2. Install dependencies used across notebooks:
 
 ```bash
-pip install jupyter polars pandas numpy scipy scikit-learn matplotlib seaborn torch pyarrow
+pip install jupyter polars pandas scipy scikit-learn matplotlib seaborn torch pyarrow sentence-transformers lightgbm "numpy<2.0" scikit-surprise
 ```
 
-Optional (depending on notebook):
+Notes:
 
-- `surprise` for matrix-factorization style baselines.
-- GPU-enabled PyTorch build for faster training.
+- `scikit-surprise` currently works most reliably with `numpy<2.0`.
+- For faster neural training, use a GPU-enabled PyTorch runtime (for example, Colab GPU).
 
 ## Running the Project
 
 ### Option 1: Google Colab (matches current notebook paths)
 
 1. Upload/open notebooks in Colab.
-2. Mount Google Drive.
-3. Confirm the dataset path in the first cells.
-4. Run cells top-to-bottom.
+2. Mount Google Drive when prompted (many notebooks include `drive.mount('/content/drive')`).
+3. Confirm that the base dataset path points to:
+   `/content/drive/Shareddrives/CMPE256_FinalProject/board_game_recommendation`
+4. Install any notebook-specific extras when prompted in cells (`lightgbm`, `sentence-transformers`, `scikit-surprise`).
+5. Run cells top-to-bottom.
 
 ### Option 2: Local Jupyter
 
 1. Place raw/processed data in a local directory.
-2. Open each notebook and replace Google Drive paths with local paths.
-3. Run notebook cells in order.
+2. Start Jupyter:
+
+```bash
+jupyter notebook
+```
+
+3. Open each notebook and replace Google Drive paths with your local base path.
+4. If a notebook has Colab-specific cells (`from google.colab import drive`, `drive.mount(...)`), skip or remove those cells.
+5. Run notebook cells in order.
 
 ## Current Modeling Coverage
 
@@ -84,4 +95,4 @@ Optional (depending on notebook):
 
 - This repository is research/experimentation oriented and notebook-driven.
 - Results and model artifacts depend on data snapshot, preprocessing choices, and runtime environment.
-- To improve reproducibility, consider adding a single `requirements.txt` and centralized config for dataset paths.
+- For reproducibility, consider adding a single `requirements.txt` and centralized config for dataset paths.
